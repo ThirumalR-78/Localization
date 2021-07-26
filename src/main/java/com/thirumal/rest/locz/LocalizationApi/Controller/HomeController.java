@@ -15,7 +15,7 @@ public class HomeController {
 	@Autowired
 	private LangdataService langdataservice;
 
-	@RequestMapping(method = RequestMethod.GET, path = "hello")
+	@RequestMapping(method = RequestMethod.GET, path = "getrecords")
 	public LanguageDATA getLangData() {
 		return langdataservice.getAllData();
 	}
